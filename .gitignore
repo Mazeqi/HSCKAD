@@ -1,0 +1,21 @@
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# model weights
+*.pt
+*.pth
+*.safetensors
+sam3/
+
+# datasets and run artifacts
+data/
+datasets/
+outputs/
+runs/
+
+# misc
+.DS_Store
+.vscode/

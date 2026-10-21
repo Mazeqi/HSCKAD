@@ -1,0 +1,109 @@
+{
+  "default": {
+    "defect": "anomalous structure, disrupted pattern, or foreign damaged patch",
+    "anomaly": "anomaly"
+  },
+  "bottle": {
+    "broken_large": "large missing piece of glass, jagged hole at bottom or side",
+    "broken_small": "small chip or crack line on the bottle surface",
+    "contamination": "dark stain or liquid spot on glass surface"
+  },
+  "cable": {
+    "bent_wire": "a wire bent at an unnatural angle, disrupting the straight alignment",
+    "cable_swap": "two wires swapped in position, color pattern mismatch",
+    "combined": "multiple defect types, e.g., cut and missing wire together",
+    "cut_inner_insulation": "a cut exposing the inner layer of a wire, revealing different color",
+    "cut_outer_insulation": "a cut on the outer jacket of the cable, exposing inner wires",
+    "missing_cable": "a complete segment of cable missing, creating a gap",
+    "missing_wire": "one or more wires missing from the bundle",
+    "poke_insulation": "a small puncture or dent on the insulation surface"
+  },
+  "capsule": {
+    "crack": "a crack line on the capsule surface",
+    "faulty_imprint": "smeared or missing text on the capsule",
+    "poke": "a dent or hole in the capsule",
+    "scratch": "a scratch mark on the capsule",
+    "squeeze": "a deformed or squeezed capsule shape"
+  },
+  "carpet": {
+    "color": "a discolored stain patch on the carpet",
+    "cut": "a cut line in the carpet fabric",
+    "hole": "a hole in the carpet texture",
+    "metal_contamination": "a small metal piece on the carpet",
+    "thread": "a loose thread on the carpet surface"
+  },
+  "grid": {
+    "bent": "a metal bar of the grid bent or warped",
+    "broken": "a metal bar snapped or broken",
+    "glue": "a glue smear on the grid",
+    "metal_contamination": "a foreign metal piece stuck on the grid",
+    "thread": "a thread or string tangled on the grid"
+  },
+  "hazelnut": {
+    "crack": "a crack line on the hazelnut shell",
+    "cut": "a cut mark on the hazelnut",
+    "hole": "a hole in the hazelnut",
+    "print": "dark printed text or pattern on the hazelnut"
+  },
+  "leather": {
+    "color": "a discolored patch on the leather",
+    "cut": "a cut or tear in the leather",
+    "fold": "a fold or crease line on the leather",
+    "glue": "a sticky glue spot on the leather",
+    "poke": "a small hole or dent in the leather"
+  },
+  "metal_nut": {
+    "bent": "a deformed or bent metal nut",
+    "color": "a discolored patch on the nut surface",
+    "flip": "the nut is flipped upside down",
+    "scratch": "a scratch mark on the nut surface"
+  },
+  "pill": {
+    "color": "a discolored spot on the pill",
+    "combined": "multiple defect types on the pill",
+    "contamination": "a dark stain or foreign material on the pill",
+    "crack": "a crack line on the pill",
+    "faulty_imprint": "smeared or missing text on the pill",
+    "pill_type": "wrong pill type or shape",
+    "scratch": "a scratch mark on the pill"
+  },
+  "screw": {
+    "manipulated_front": "the front head of the screw is scratched or deformed",
+    "scratch_head": "a scratch on the flat head of the screw",
+    "scratch_neck": "a scratch or groove on the neck just below the head",
+    "thread_side": "a damaged or missing thread on the side of the screw",
+    "thread_top": "a damaged thread near the top of the screw"
+  },
+  "tile": {
+    "crack": "a crack line on the tile",
+    "glue_strip": "a glue smear on the tile",
+    "gray_stroke": "a gray scratch mark on the tile",
+    "oil": "an oil stain on the tile",
+    "rough": "a rough surface patch on the tile"
+  },
+  "toothbrush": {
+    "defective": "a missing or bent bristle, or deformed brush head"
+  },
+  "transistor": {
+    "bent_lead": "a metal leg bent out of normal position",
+    "cut_lead": "a metal leg cut short or missing",
+    "damaged_case": "a crack or break in the black plastic body",
+    "misplaced": "the transistor misaligned or rotated on the board"
+  },
+  "wood": {
+    "color": "a discolored stain on the wood",
+    "combined": "mixed defects on the wood",
+    "hole": "a hole or void in the wood",
+    "liquid": "a liquid drop on the wood",
+    "scratch": "a scratch line on the wood"
+  },
+  "zipper": {
+    "broken_teeth": "missing or broken zipper teeth, creating a gap",
+    "combined": "multiple defects, e.g., broken teeth and fabric damage",
+    "fabric_border": "tear or fraying on the fabric border next to the zipper",
+    "fabric_interior": "a hole or tear in the fabric away from the zipper",
+    "rough": "a rough or uneven surface on the zipper or fabric",
+    "split_teeth": "the zipper teeth are split apart, leaving an open seam",
+    "squeezed_teeth": "the zipper teeth are pinched together, causing distortion"
+  }
+}

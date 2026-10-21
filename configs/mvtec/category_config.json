@@ -1,0 +1,118 @@
+{
+  "default": {
+    "confidence_threshold": 0.15,
+    "temperature": 0.2,
+    "top_p": 0.85,
+    "top_k": -1,
+    "max_tokens": 1024,
+    "nms_iou": 0.4,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "bottle": {
+    "confidence_threshold": 0.1,
+    "temperature": 0.2,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "cable": {
+    "confidence_threshold": 0.15,
+    "temperature": 0.25,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "capsule": {
+    "confidence_threshold": 0.2,
+    "temperature": 0.2,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "carpet": {
+    "confidence_threshold": 0.15,
+    "temperature": 0.3,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "grid": {
+    "confidence_threshold": 0.2,
+    "temperature": 0.2,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "hazelnut": {
+    "confidence_threshold": 0.15,
+    "temperature": 0.25,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "leather": {
+    "confidence_threshold": 0.15,
+    "temperature": 0.3,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "metal_nut": {
+    "confidence_threshold": 0.2,
+    "temperature": 0.2,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "pill": {
+    "confidence_threshold": 0.2,
+    "temperature": 0.2,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "screw": {
+    "confidence_threshold": 0.15,
+    "temperature": 0.2,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "tile": {
+    "confidence_threshold": 0.15,
+    "temperature": 0.25,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "toothbrush": {
+    "confidence_threshold": 0.2,
+    "temperature": 0.2,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "transistor": {
+    "confidence_threshold": 0.15,
+    "temperature": 0.2,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "wood": {
+    "confidence_threshold": 0.15,
+    "temperature": 0.3,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  },
+  "zipper": {
+    "confidence_threshold": 0.15,
+    "temperature": 0.2,
+    "min_area_ratio": 0.0005,
+    "max_area_ratio": 0.6,
+    "enable_tiling": false
+  }
+}

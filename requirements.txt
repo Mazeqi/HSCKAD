@@ -1,0 +1,19 @@
+# ---------------------------------------------------------------------------
+# Stage 1: VLM anomaly localization (Qwen3-VL + vLLM)
+# ---------------------------------------------------------------------------
+torch>=2.7
+torchvision
+transformers>=4.57
+vllm>=0.11
+accelerate
+# qwen_vl_utils is vendored in this repository, no install needed
+
+# ---------------------------------------------------------------------------
+# Stage 2: SAM 3 segmentation + box/mask metrics
+# ---------------------------------------------------------------------------
+# SAM 3 itself is installed from source, see README (section "Installation"):
+#   git clone https://github.com/facebookresearch/sam3 && pip install -e .
+opencv-python
+numpy
+pillow
+tqdm

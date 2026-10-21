@@ -1,0 +1,10 @@
+# normalize line endings to LF in the repository
+* text=auto eol=lf
+
+*.sh text eol=lf
+
+# binaries
+*.png binary
+*.jpg binary
+*.pt binary
+*.npy binary

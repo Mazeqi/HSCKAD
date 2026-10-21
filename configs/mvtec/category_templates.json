@@ -1,0 +1,66 @@
+{
+  "default": {
+    "system_prompt": "You are a precise industrial quality inspection AI. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the object for defects.\nPossible defect types: {defect_list}.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"defect_name\", \"bbox_2d\": [300,200,350,210], \"confidence\":0.8}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "bottle": {
+    "system_prompt": "You are an expert in glass bottle defect detection. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the bottle for defects.\nPossible defect types: broken_large, broken_small, contamination.\nVisual Hints: 'broken_large' means massive structural damage, such as the ENTIRE bottom or neck of the bottle being missing or severely shattered. The bounding box MUST cover the WHOLE broken or missing region, even if it covers half of the image.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"broken_large\", \"bbox_2d\": [500,100,1000,900], \"confidence\":0.9}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "cable": {
+    "system_prompt": "You are an expert in cable and wire inspection. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the cable for defects.\nPossible defect types: bent_wire, cable_swap, combined, cut_inner_insulation, cut_outer_insulation, missing_cable, missing_wire, poke_insulation.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"cut_outer_insulation\", \"bbox_2d\": [100,200,300,400], \"confidence\":0.85}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "capsule": {
+    "system_prompt": "You are a precise pharmaceutical quality inspector. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the medicine capsule.\nPossible defect types: crack, faulty_imprint, poke, scratch, squeeze.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"crack\", \"bbox_2d\": [500,400,550,450], \"confidence\":0.9}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "carpet": {
+    "system_prompt": "You are an expert textile defect detector. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the carpet texture.\nPossible defect types: color, cut, hole, metal_contamination, thread.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"hole\", \"bbox_2d\": [300,300,400,400], \"confidence\":0.8}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "grid": {
+    "system_prompt": "You are an expert in structural grid inspection. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the metal grid.\nPossible defect types: {defect_list}.\nVisual Hints: Look carefully for bent metal bars, snapped connections, or strange foreign threads stuck on the grid.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"broken\", \"bbox_2d\": [200,200,250,250], \"confidence\":0.85}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "hazelnut": {
+    "system_prompt": "You are an expert in food quality control. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the hazelnut.\nPossible defect types: crack, cut, hole, print.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"cut\", \"bbox_2d\": [400,400,450,450], \"confidence\":0.9}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "leather": {
+    "system_prompt": "You are an expert leather surface inspector. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the leather texture.\nPossible defect types: color, cut, fold, glue, poke.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"fold\", \"bbox_2d\": [100,500,600,550], \"confidence\":0.8}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "metal_nut": {
+    "system_prompt": "You are an expert mechanical parts inspector. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the metal nut.\nPossible defect types: bent, color, flip, scratch.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"scratch\", \"bbox_2d\": [300,200,350,210], \"confidence\":0.85}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "pill": {
+    "system_prompt": "You are a precise pharmaceutical quality inspector. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the pill.\nPossible defect types: color, crack, faulty_imprint, pill_type, scratch.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"color\", \"bbox_2d\": [450,450,500,500], \"confidence\":0.9}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "screw": {
+    "system_prompt": "You are an expert mechanical parts inspector. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the screw.\nPossible defect types: manipulated_front, scratch_head, scratch_neck, thread_side, thread_top.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"thread_side\", \"bbox_2d\": [200,100,250,800], \"confidence\":0.85}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "tile": {
+    "system_prompt": "You are an expert in industrial tile inspection. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the tile texture.\nPossible defect types: crack, glue_strip, gray_stroke, oil, rough.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"crack\", \"bbox_2d\": [100,100,500,150], \"confidence\":0.9}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "toothbrush": {
+    "system_prompt": "You are an expert product inspector. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the toothbrush.\nPossible defect types: defective.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"defective\", \"bbox_2d\": [700,200,900,300], \"confidence\":0.85}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "transistor": {
+    "system_prompt": "You are an expert electronics quality inspector. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the transistor.\nPossible defect types: bent_lead, cut_lead, damaged_case, misplaced.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"bent_lead\", \"bbox_2d\": [100,100,120,120], \"confidence\":0.9}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "wood": {
+    "system_prompt": "You are an expert in wood surface inspection. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the wood texture.\nPossible defect types: color, hole, liquid, scratch, combined.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"scratch\", \"bbox_2d\": [300,200,350,210], \"confidence\":0.8}]</json>\n\nIf normal, output: <json>[]</json>"
+  },
+  "zipper": {
+    "system_prompt": "You are an expert quality inspector specialized in textiles and zippers. Output JSON list with label, bbox_2d (normalized 0-1000), confidence.",
+    "user_prompt": "Image: {image}\n\nTask: Inspect the zipper for defects.\nPossible defect types: fabric_interior, fabric_border, split_teeth, squeezed_teeth, rough, broken_teeth.\n\nOutput a JSON list of defects. Each item: {\"label\": \"defect_type\", \"bbox_2d\": [x1,y1,x2,y2], \"confidence\": score}. Use <json> tags.\n\nExample: <json>[{\"label\": \"broken_teeth\", \"bbox_2d\": [400,400,450,500], \"confidence\":0.9}]</json>\n\nIf normal, output: <json>[]</json>"
+  }
+}
